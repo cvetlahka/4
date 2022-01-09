@@ -32,6 +32,9 @@
                                 <state key="normal" title="кнопка">
                                     <color key="titleColor" systemColor="systemPurpleColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="togglePressButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="X3z-ja-i5T"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +47,10 @@
                             <constraint firstItem="zPO-aB-mEA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="piM-wT-AoA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lable" destination="hW6-4v-owj" id="o4z-Fj-JRf"/>
+                        <outlet property="toggleButton" destination="zPO-aB-mEA" id="D6r-Lc-nGY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

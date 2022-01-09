@@ -9,11 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var toggleButton: UIButton!
+    @IBOutlet weak var lable: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        lable.isHidden = true
+        toggleButton.layer.cornerRadius = 10
     }
 
-
+    @IBAction func togglePressButton() {
+        if lable.isHidden{
+            lable.isHidden.toggle()
+            toggleButton.setTitle("Ку-ку", for: .normal)
+        }else{
+            lable.isHidden.toggle()
+            toggleButton.setTitle( "я тут", for: .normal)
+        }
+    }
+    
 }
 
