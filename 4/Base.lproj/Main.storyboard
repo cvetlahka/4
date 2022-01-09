@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет всем!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW6-4v-owj">
-                                <rect key="frame" x="106.66666666666669" y="408.33333333333331" width="177" height="27.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет всем!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hW6-4v-owj">
+                                <rect key="frame" x="106.5" y="430.5" width="201" height="35"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPO-aB-mEA">
-                                <rect key="frame" x="154" y="652" width="83" height="41"/>
+                                <rect key="frame" x="169" y="704" width="76" height="41"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="W8x-3d-m1w"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="кнопка">
                                     <color key="titleColor" systemColor="systemPurpleColor"/>
@@ -34,12 +37,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zPO-aB-mEA" secondAttribute="trailing" constant="153" id="FTm-30-oi0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zPO-aB-mEA" secondAttribute="bottom" constant="117" id="Oka-ZK-PYp"/>
-                            <constraint firstItem="zPO-aB-mEA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="dc6-xC-9v0"/>
-                            <constraint firstItem="zPO-aB-mEA" firstAttribute="width" secondItem="hW6-4v-owj" secondAttribute="height" multiplier="107:35" id="oQH-1w-wQS"/>
-                            <constraint firstItem="hW6-4v-owj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4C-ML-4oU"/>
-                            <constraint firstItem="hW6-4v-owj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xZI-7H-KcX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zPO-aB-mEA" secondAttribute="bottom" constant="117" id="2cE-fF-Dh6"/>
+                            <constraint firstItem="hW6-4v-owj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106.66666666666669" id="DSJ-Jt-ahY"/>
+                            <constraint firstItem="hW6-4v-owj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GvK-9O-DOC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hW6-4v-owj" secondAttribute="trailing" constant="106.33333333333331" id="HBG-EU-SKN"/>
+                            <constraint firstItem="zPO-aB-mEA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="piM-wT-AoA"/>
                         </constraints>
                     </view>
                 </viewController>
